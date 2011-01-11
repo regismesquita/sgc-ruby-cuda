@@ -1,3 +1,6 @@
 require 'mkmf'
-have_library("cuda")
-create_makefile("rubycu")
+if have_library("cuda") 
+  create_makefile("rubycu")
+else
+  raise "Impossible to find cuda library"
+end
