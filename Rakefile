@@ -12,7 +12,6 @@ CUDA_RUNTIME_PATH = "#{CUDA_PATH}/runtime"
 RUBYCU_LIB        = "#{CUDA_DRIVER_PATH}/rubycu.so"
 RUBYCU_LIB_DEP    = ["#{CUDA_DRIVER_PATH}/extconf.rb", "#{CUDA_DRIVER_PATH}/rubycu.cpp"]
 
-
 task :default => [:build]
 
 desc 'Build everything.'
@@ -26,7 +25,8 @@ desc 'Build rubycu shared library.'
 task :rubycu => RUBYCU_LIB
 
 file RUBYCU_LIB => RUBYCU_LIB_DEP do
-    system %{cd #{CUDA_DRIVER_PATH}; ruby extconf.rb; make}
+  @extconf_parameters = ARGV
+  system %{cd #{CUDA_DRIVER_PATH}; ruby extconf.rb #{@extconf_parameters}; make}
 end
 
 
