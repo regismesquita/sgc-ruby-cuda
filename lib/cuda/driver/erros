@@ -1,0 +1,12 @@
+rubycu.cu(225): warning: function "SGC::CU::to_ctype<T>(VALUE) [with T=unsigned long]" was declared but never referenced
+
+rubycu.cu(213): warning: function "SGC::CU::to_ctype<T>(VALUE) [with T=unsigned int]" was declared but never referenced
+
+rubycu.cu(198): warning: function "SGC::CU::to_ctype<T>(VALUE) [with T=bool]" was declared but never referenced
+
+rubycu.cu(225): warning: function "SGC::CU::to_ctype<T>(VALUE) [with T=unsigned long]" was declared but never referenced
+
+rubycu.cu(213): warning: function "SGC::CU::to_ctype<T>(VALUE) [with T=unsigned int]" was declared but never referenced
+
+rubycu.cu(198): warning: function "SGC::CU::to_ctype<T>(VALUE) [with T=bool]" was declared but never referenced
+

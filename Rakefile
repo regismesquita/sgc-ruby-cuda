@@ -10,7 +10,7 @@ CUDA_PATH         = "lib/cuda"
 CUDA_DRIVER_PATH  = "#{CUDA_PATH}/driver"
 CUDA_RUNTIME_PATH = "#{CUDA_PATH}/runtime"
 RUBYCU_LIB        = "#{CUDA_DRIVER_PATH}/rubycu.so"
-RUBYCU_LIB_DEP    = ["#{CUDA_DRIVER_PATH}/extconf.rb", "#{CUDA_DRIVER_PATH}/rubycu.cpp"]
+RUBYCU_LIB_DEP    = ["#{CUDA_DRIVER_PATH}/extconf.rb", "#{CUDA_DRIVER_PATH}/rubycu.cu"]
 
 task :default => [:build]
 
